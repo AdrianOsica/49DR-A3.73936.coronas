@@ -1,0 +1,10 @@
+Nazwa projektu Coronas
+
+Po wpisaniu Państwa program wskaże co jest tego stolicą
+Po określeniu stolicy user będzie mógł sprawdzić:
+-Aktualną pogodę
+-Statystyki zarażeń COVID-19
+-Położenie geograficzne
+-Populacje
+
+Na specjalne życzenie user może otrzymać raport wyświetlonych przez niego informacji na maila
