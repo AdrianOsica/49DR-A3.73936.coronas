@@ -2684,11 +2684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\coronas\\coronas.csproj",
+      "projectUniqueName": "C:\\coronas\\49DR-A3.73936.coronas\\coronas.csproj",
       "projectName": "coronas",
-      "projectPath": "C:\\coronas\\coronas.csproj",
+      "projectPath": "C:\\coronas\\49DR-A3.73936.coronas\\coronas.csproj",
       "packagesPath": "C:\\Users\\osicaa\\.nuget\\packages\\",
-      "outputPath": "C:\\coronas\\obj\\",
+      "outputPath": "C:\\coronas\\49DR-A3.73936.coronas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\osicaa\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XQQ29hoZqxAKBsL4v4iHyyQlvUpWlPwh7hFRAJ68Q2myqgrdYfW6jsTiNaYsjQ5qwn6Wa3pvrynNvlDl11hBow==",
+  "dgSpecHash": "SOKWTr8UQs33bMNGQQjtuIr7iS5CQOJOanZH188W021H8KMZXoDxlTgO+0P068G5WaYK5qajHjTDNAclUc9xYQ==",
   "success": true,
-  "projectFilePath": "C:\\coronas\\coronas.csproj",
+  "projectFilePath": "C:\\coronas\\49DR-A3.73936.coronas\\coronas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\osicaa\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\osicaa\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
