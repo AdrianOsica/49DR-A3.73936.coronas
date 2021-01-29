@@ -2679,19 +2679,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\osicaa\\.nuget\\packages\\": {}
+    "C:\\Users\\osica\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\coronas\\49DR-A3.73936.coronas\\coronas.csproj",
+      "projectUniqueName": "C:\\Users\\osica\\Documents\\GitHub\\49DR-A3.73936.coronas\\coronas.csproj",
       "projectName": "coronas",
-      "projectPath": "C:\\coronas\\49DR-A3.73936.coronas\\coronas.csproj",
-      "packagesPath": "C:\\Users\\osicaa\\.nuget\\packages\\",
-      "outputPath": "C:\\coronas\\49DR-A3.73936.coronas\\obj\\",
+      "projectPath": "C:\\Users\\osica\\Documents\\GitHub\\49DR-A3.73936.coronas\\coronas.csproj",
+      "packagesPath": "C:\\Users\\osica\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\osica\\Documents\\GitHub\\49DR-A3.73936.coronas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\osicaa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\osica\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

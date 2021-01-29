@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\osicaa\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\osicaa\\.nuget\\packages"
+      "C:\\Users\\osica\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\osica\\.nuget\\packages"
     ]
   }
 }

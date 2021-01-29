@@ -40,29 +40,39 @@ namespace coronas
 
             Console.WriteLine($"W {capitol_api[0].capital} jest obecnie {weather.weather[0].main} i potwierdzonych zakazen covid-19 {covid[14].Confirmed}");
 
+            Console.Write("Czy chcesz dostac te informacje na maila? (Tak/Nie)");
+            string choose = Console.ReadLine();
 
-            var fromAddress = new MailAddress("jareckijacek37@gmail.com", "From Name");
-            var toAddress = new MailAddress("osica32@gmail.com", "To Name");
-            const string fromPassword = "";
-            const string subject = "Subject";
-            const string body = "Body";
+            if(choose=="Tak"){
 
-            var smtp = new SmtpClient
-            {
-                Host = "smtp.gmail.com",
-                Port = 587,
-                EnableSsl = true,
-                DeliveryMethod = SmtpDeliveryMethod.Network,
-                UseDefaultCredentials = false,
-                Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
-            };
-            using (var message = new MailMessage(fromAddress, toAddress)
-            {
-                Subject = subject,
-                Body = body
-            })
-            {
-                smtp.Send(message);
+                Console.Write("Podaj email \n ");
+                string mail = Console.ReadLine();
+
+                var fromAddress = new MailAddress("wsm@zonegames.pl");
+                var toAddress = new MailAddress(mail);
+                const string fromPassword = "";
+                const string subject = "wsm projekt";
+                string body = $"W {capitol_api[0].capital} jest obecnie {weather.weather[0].main} i potwierdzonych zakazen covid-19 {covid[14].Confirmed}";
+
+                var smtp = new SmtpClient
+                {
+                    Host = "smtp.zoho.com",
+                    Port = 587,
+                    EnableSsl = true,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
+                    Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
+                };
+                using (var message = new MailMessage(fromAddress, toAddress)
+                {
+                    Subject = subject,
+                    Body = body
+                })
+                {
+                    smtp.Send(message);
+                    Console.WriteLine("Wyslano mail");
+                }
+
             }
 
 
