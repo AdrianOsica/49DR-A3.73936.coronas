@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Net;
 using System.Net.Mail;
+//using Functions;
+
 
 namespace coronas
 {
@@ -16,19 +18,20 @@ namespace coronas
 
         private static readonly HttpClient client = new HttpClient();
         
-        static async Task Main(string[] args)
+        public static async Task Main(string[] args)
         {
 
+            //Function function = new Function(); ;
             using var client = new HttpClient();
 
             Console.WriteLine("Podaj Panstwo");
             string country = Console.ReadLine();
-            
+
             string get_capitol = await client.GetStringAsync($"https://restcountries.eu/rest/v2/name/{country}");
             Console.Clear();
-        
+
             dynamic capitol_api = JsonConvert.DeserializeObject(get_capitol);
-            
+
             string get_weather = await client.GetStringAsync($"http://api.openweathermap.org/data/2.5/weather?q={capitol_api[0].capital}&appid=4d9a35918230b98cdfd37d30dca37ca3");
             dynamic weather = JsonConvert.DeserializeObject(get_weather);
 
@@ -40,12 +43,13 @@ namespace coronas
 
             Console.WriteLine($"W {capitol_api[0].capital} jest obecnie {weather.weather[0].main} i potwierdzonych zakazen covid-19 {covid[14].Confirmed}");
 
-            Console.Write("Czy chcesz dostac te informacje na maila? (Tak/Nie)");
+            Console.Write("\n\nCzy chcesz dostac te informacje na maila? (Tak/Nie)\n");
             string choose = Console.ReadLine();
 
-            if(choose=="Tak"){
+            if (choose == "Tak")
+            {
 
-                Console.Write("Podaj email \n ");
+                Console.Write("Podaj email\n");
                 string mail = Console.ReadLine();
 
                 var fromAddress = new MailAddress("wsm@zonegames.pl");
@@ -74,9 +78,6 @@ namespace coronas
                 }
 
             }
-
-
-          
 
         }
 
